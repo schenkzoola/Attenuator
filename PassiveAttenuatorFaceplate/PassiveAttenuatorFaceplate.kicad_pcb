@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -101,7 +101,7 @@
     (uvia_drill 0.1)
   )
 
-  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5DE00ACF) (tstamp 5DE00F73)
+  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5DE7527F) (tstamp 5DE00F73)
     (at 150 132.499999 180)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
@@ -112,10 +112,10 @@
     (fp_text value MountingHole (at 0 4.2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad "" np_thru_hole circle (at 0 0 180) (size 7 7) (drill 7) (layers *.Cu *.Mask))
+    (pad "" np_thru_hole circle (at 0 0 180) (size 6 6) (drill 6) (layers *.Cu *.Mask))
   )
 
-  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5DE00AC5) (tstamp 5DE00F7F)
+  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5DE75273) (tstamp 5DE00F7F)
     (at 150 117.499999 180)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
@@ -126,7 +126,7 @@
     (fp_text value MountingHole (at 0 4.2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad "" np_thru_hole circle (at 0 0 180) (size 7 7) (drill 7) (layers *.Cu *.Mask))
+    (pad "" np_thru_hole circle (at 0 0 180) (size 6 6) (drill 6) (layers *.Cu *.Mask))
   )
 
   (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5DE00A88) (tstamp 5DE00F67)
