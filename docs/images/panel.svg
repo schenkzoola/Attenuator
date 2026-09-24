@@ -1,0 +1,62 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='138.5 19.250001 63.0 136.5' width='252' height='546'>
+<title>Passive Attenuator front panel</title>
+<rect x='138.5' y='19.250001' width='63.0' height='136.5' fill='#fff'/>
+<rect x='142.5' y='23.250001' width='15.0' height='128.5' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<polygon points='143.5,126.0 156.5,126.0 156.5,139.0 143.5,139.0' fill='#1a1a1a'/>
+<polygon points='143.5,71.0 156.5,71.0 156.5,84.0 143.5,84.0' fill='#1a1a1a'/>
+<line x1='142.5' y1='87.5' x2='157.5' y2='87.5' stroke='#1a1a1a' stroke-width='1.0' stroke-linecap='square'/>
+<line x1='143.5' y1='111.0' x2='143.5' y2='124.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='111.0' x2='143.5' y2='111.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='124.0' x2='156.5' y2='111.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='124.0' x2='156.5' y2='124.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='56.0' x2='143.5' y2='69.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='56.0' x2='143.5' y2='56.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='69.0' x2='156.5' y2='56.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='69.0' x2='156.5' y2='69.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<text x='150.0' y='31.500001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' font-style='italic' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Atten.</text>
+<text x='143.0' y='144.5' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' font-style='italic' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Schenk</text>
+<circle cx='150.0' cy='132.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='132.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='132.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='117.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='117.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='117.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='97.499999' r='6.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='97.499999' r='4.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
+<line x1='150.0' y1='91.199999' x2='150.0' y2='94.499999' stroke='#1a1a1a' stroke-width='0.6' stroke-linecap='round'/>
+<circle cx='150.0' cy='77.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='77.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='77.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='62.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='62.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='62.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='42.499999' r='6.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='42.499999' r='4.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
+<line x1='150.0' y1='36.199999000000005' x2='150.0' y2='39.499999' stroke='#1a1a1a' stroke-width='0.6' stroke-linecap='round'/>
+<circle cx='150.0' cy='26.249999' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<circle cx='150.0' cy='148.75' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<line x1='155.5' y1='42.499999' x2='162.5' y2='42.499999' stroke='#555' stroke-width='0.3'/>
+<circle cx='155.5' cy='42.499999' r='0.5' fill='#555'/>
+<text x='164.5' y='40.899999' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Level 1</text>
+<text x='164.5' y='44.899999' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>turn right for more</text>
+<line x1='154.5' y1='62.499999' x2='162.5' y2='62.499999' stroke='#555' stroke-width='0.3'/>
+<circle cx='154.5' cy='62.499999' r='0.5' fill='#555'/>
+<text x='164.5' y='60.899999' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>In 1</text>
+<text x='164.5' y='64.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>outlined box = input</text>
+<line x1='154.5' y1='77.499999' x2='162.5' y2='77.499999' stroke='#555' stroke-width='0.3'/>
+<circle cx='154.5' cy='77.499999' r='0.5' fill='#555'/>
+<text x='164.5' y='75.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Out 1</text>
+<text x='164.5' y='79.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>solid box = output</text>
+<line x1='155.5' y1='97.499999' x2='162.5' y2='97.499999' stroke='#555' stroke-width='0.3'/>
+<circle cx='155.5' cy='97.499999' r='0.5' fill='#555'/>
+<text x='164.5' y='95.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Level 2</text>
+<text x='164.5' y='99.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>turn right for more</text>
+<line x1='154.5' y1='117.499999' x2='162.5' y2='117.499999' stroke='#555' stroke-width='0.3'/>
+<circle cx='154.5' cy='117.499999' r='0.5' fill='#555'/>
+<text x='164.5' y='115.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>In 2</text>
+<text x='164.5' y='119.89999900000001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>unplugged: copies In 1</text>
+<line x1='154.5' y1='132.499999' x2='162.5' y2='132.499999' stroke='#555' stroke-width='0.3'/>
+<circle cx='154.5' cy='132.499999' r='0.5' fill='#555'/>
+<text x='164.5' y='130.899999' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Out 2</text>
+<text x='164.5' y='134.899999' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>solid box = output</text>
+</svg>

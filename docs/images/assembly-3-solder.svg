@@ -1,0 +1,60 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 106 40.0' width='424' height='160'>
+<title>Step 3: solder the pots and jacks</title>
+<rect x='-3' y='-1' width='106' height='40.0' fill='#fff'/>
+<text x='0.00' y='2.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Back (solder side)</text>
+<rect x='0' y='8' width='100.0' height='15.0' rx='0.6' fill='#f1f1f1' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='23.500' y='13.677' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='23.350' y='11.050' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='23.750' y='11.425' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='24.035' y='7.785' width='1.93' height='1.83' rx='0.15' fill='#d9302c' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='24.390' y='8.090' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='23.350' y='19.350' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='23.750' y='19.725' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='38.500' y='13.677' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='38.350' y='11.050' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='38.750' y='11.425' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='39.035' y='7.785' width='1.93' height='1.83' rx='0.15' fill='#d9302c' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='39.390' y='8.090' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='38.350' y='19.350' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='38.750' y='19.725' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='78.500' y='13.677' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='78.350' y='11.050' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='78.750' y='11.425' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='79.035' y='7.785' width='1.93' height='1.83' rx='0.15' fill='#d9302c' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='79.390' y='8.090' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='78.350' y='19.350' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='78.750' y='19.725' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='93.500' y='13.677' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='93.350' y='11.050' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='93.750' y='11.425' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='94.035' y='7.785' width='1.93' height='1.83' rx='0.15' fill='#d9302c' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='94.390' y='8.090' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='93.350' y='19.350' width='3.3' height='1.5' rx='0.75' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='93.750' y='19.725' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='5.000' cy='20.250' r='2.0' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='4.000' y='19.250' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='5.000' cy='10.750' r='2.0' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='4.000' y='9.750' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='12.500' cy='18.000' r='0.9' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='12.000' y='17.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='12.500' cy='15.500' r='0.9' fill='#d9302c' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='12.000' y='15.000' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='12.500' cy='13.000' r='0.9' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='12.000' y='12.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='60.000' cy='20.250' r='2.0' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='59.000' y='19.250' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='60.000' cy='10.750' r='2.0' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='59.000' y='9.750' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='67.500' cy='18.000' r='0.9' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='67.000' y='17.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='67.500' cy='15.500' r='0.9' fill='#d9302c' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='67.000' y='15.000' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='67.500' cy='13.000' r='0.9' fill='#fff' stroke='#d9302c' stroke-width='0.15'/>
+<rect x='67.000' y='12.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<text x='0.00' y='25.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>RV1 end (top of panel)</text>
+<text x='100.00' y='25.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='end' dominant-baseline='central'>J4 end</text>
+<rect x='0' y='29.8' width='2.4' height='2.4' rx='0.2' fill='#d9302c'/>
+<text x='3.60' y='31.00' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' font-weight='normal' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>1. Tack these first: one leg per part (6 joints)</text>
+<rect x='0' y='34.3' width='2.4' height='2.4' rx='1.2' fill='#fff' stroke='#d9302c' stroke-width='0.3'/>
+<text x='3.60' y='35.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' font-weight='normal' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>2. Then the rest, including the 4 large pot lugs (16 joints)</text>
+</svg>

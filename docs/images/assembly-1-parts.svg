@@ -1,0 +1,119 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -3 106 31.0' width='424' height='124'>
+<title>Step 1: fit the pots and jacks</title>
+<rect x='-3' y='-3' width='106' height='31.0' fill='#fff'/>
+<text x='0.00' y='2.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Front (part side)</text>
+<text x='0.00' y='6.10' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>Fit RV1, RV2 and J1–J4. Don't solder yet.</text>
+<rect x='0' y='8' width='100.0' height='15.0' rx='0.6' fill='#f1f1f1' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='23.500' y='14.323' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='23.350' y='18.450' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='23.750' y='18.825' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='24.035' y='21.385' width='1.93' height='1.83' rx='0.15' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='24.390' y='21.690' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='23.350' y='10.150' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='23.750' y='10.525' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<line x1='29.500' y1='20.320' x2='29.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='20.500' y1='20.320' x2='20.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='20.500' y1='9.820' x2='24.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='25.500' y1='9.820' x2='29.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='20.500' y1='20.320' x2='24.650' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='25.350' y1='20.320' x2='29.500' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='26.060' y1='23.300' x2='26.060' y2='22.500' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='26.060' y1='23.300' x2='25.200' y2='23.300' stroke='#d9302c' stroke-width='0.3'/>
+<circle cx='25.000' cy='15.820' r='1.8' fill='none' stroke='#d9302c' stroke-width='0.3'/>
+<text x='29.030' y='21.220' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.6' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>J1</text>
+<rect x='38.500' y='14.323' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='38.350' y='18.450' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='38.750' y='18.825' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='39.035' y='21.385' width='1.93' height='1.83' rx='0.15' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='39.390' y='21.690' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='38.350' y='10.150' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='38.750' y='10.525' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<line x1='44.500' y1='20.320' x2='44.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='35.500' y1='20.320' x2='35.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='35.500' y1='9.820' x2='39.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='40.500' y1='9.820' x2='44.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='35.500' y1='20.320' x2='39.650' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='40.350' y1='20.320' x2='44.500' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='41.060' y1='23.300' x2='41.060' y2='22.500' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='41.060' y1='23.300' x2='40.200' y2='23.300' stroke='#d9302c' stroke-width='0.3'/>
+<circle cx='40.000' cy='15.820' r='1.8' fill='none' stroke='#d9302c' stroke-width='0.3'/>
+<text x='44.030' y='21.220' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.6' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>J2</text>
+<rect x='78.500' y='14.323' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='78.350' y='18.450' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='78.750' y='18.825' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='79.035' y='21.385' width='1.93' height='1.83' rx='0.15' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='79.390' y='21.690' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='78.350' y='10.150' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='78.750' y='10.525' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<line x1='84.500' y1='20.320' x2='84.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='75.500' y1='20.320' x2='75.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='75.500' y1='9.820' x2='79.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='80.500' y1='9.820' x2='84.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='75.500' y1='20.320' x2='79.650' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='80.350' y1='20.320' x2='84.500' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='81.060' y1='23.300' x2='81.060' y2='22.500' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='81.060' y1='23.300' x2='80.200' y2='23.300' stroke='#d9302c' stroke-width='0.3'/>
+<circle cx='80.000' cy='15.820' r='1.8' fill='none' stroke='#d9302c' stroke-width='0.3'/>
+<text x='84.030' y='21.220' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.6' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>J3</text>
+<rect x='93.500' y='14.323' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
+<rect x='93.350' y='18.450' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='93.750' y='18.825' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='94.035' y='21.385' width='1.93' height='1.83' rx='0.15' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='94.390' y='21.690' width='1.22' height='1.22' rx='0.61' fill='#fff' stroke='none' stroke-width='0.15'/>
+<rect x='93.350' y='10.150' width='3.3' height='1.5' rx='0.75' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='93.750' y='10.525' width='2.5' height='0.75' rx='0.375' fill='#fff' stroke='none' stroke-width='0.15'/>
+<line x1='99.500' y1='20.320' x2='99.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='90.500' y1='20.320' x2='90.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='90.500' y1='9.820' x2='94.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='95.500' y1='9.820' x2='99.500' y2='9.820' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='90.500' y1='20.320' x2='94.650' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='95.350' y1='20.320' x2='99.500' y2='20.320' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='96.060' y1='23.300' x2='96.060' y2='22.500' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='96.060' y1='23.300' x2='95.200' y2='23.300' stroke='#d9302c' stroke-width='0.3'/>
+<circle cx='95.000' cy='15.820' r='1.8' fill='none' stroke='#d9302c' stroke-width='0.3'/>
+<text x='99.030' y='21.220' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.6' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>J4</text>
+<circle cx='5.000' cy='10.750' r='2.0' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='4.000' y='9.750' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='5.000' cy='20.250' r='2.0' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='4.000' y='19.250' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='12.500' cy='13.000' r='0.9' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='12.000' y='12.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='12.500' cy='15.500' r='0.9' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='12.000' y='15.000' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='12.500' cy='18.000' r='0.9' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='12.000' y='17.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<line x1='0.090' y1='21.610' x2='0.090' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='11.560' y1='12.175' x2='11.560' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='11.560' y1='14.675' x2='11.560' y2='13.825' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='11.560' y1='17.175' x2='11.560' y2='16.325' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='11.560' y1='21.610' x2='11.560' y2='18.825' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='3.097' y1='9.390' x2='0.090' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='11.560' y1='9.390' x2='6.902' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='3.097' y1='21.610' x2='0.090' y2='21.610' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='11.560' y1='21.610' x2='6.902' y2='21.610' stroke='#d9302c' stroke-width='0.3'/>
+<text x='14.500' y='21.000' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.6' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>RV1</text>
+<circle cx='60.000' cy='10.750' r='2.0' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='59.000' y='9.750' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='60.000' cy='20.250' r='2.0' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='59.000' y='19.250' width='2.0' height='2.0' rx='1.0' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='67.500' cy='13.000' r='0.9' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='67.000' y='12.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='67.500' cy='15.500' r='0.9' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='67.000' y='15.000' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<circle cx='67.500' cy='18.000' r='0.9' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>
+<rect x='67.000' y='17.500' width='1.0' height='1.0' rx='0.5' fill='#fff' stroke='none' stroke-width='0.15'/>
+<line x1='55.090' y1='21.610' x2='55.090' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='66.560' y1='12.175' x2='66.560' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='66.560' y1='14.675' x2='66.560' y2='13.825' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='66.560' y1='17.175' x2='66.560' y2='16.325' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='66.560' y1='21.610' x2='66.560' y2='18.825' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='58.097' y1='9.390' x2='55.090' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='66.560' y1='9.390' x2='61.902' y2='9.390' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='58.097' y1='21.610' x2='55.090' y2='21.610' stroke='#d9302c' stroke-width='0.3'/>
+<line x1='66.560' y1='21.610' x2='61.902' y2='21.610' stroke='#d9302c' stroke-width='0.3'/>
+<text x='54.000' y='21.500' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.6' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>RV2</text>
+<circle cx='5.00' cy='15.50' r='3.5' fill='#fbe3e2' stroke='#d9302c' stroke-width='0.35'/>
+<circle cx='60.00' cy='15.50' r='3.5' fill='#fbe3e2' stroke='#d9302c' stroke-width='0.35'/>
+<text x='0.00' y='25.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>RV1 end (top of panel)</text>
+<text x='100.00' y='25.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='end' dominant-baseline='central'>J4 end</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='79.5 20.250001 141.0 134.5' width='564' height='538'>
+<title>Patch example: one LFO at two depths</title>
+<rect x='79.5' y='20.250001' width='141.0' height='134.5' fill='#fff'/>
+<defs><marker id='r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='4' markerHeight='4' orient='auto'><path d='M0 1 L10 5 L0 9 z' fill='#d9302c'/></marker><marker id='b' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='4' markerHeight='4' orient='auto'><path d='M0 1 L10 5 L0 9 z' fill='#2a6fb0'/></marker></defs>
+<rect x='142.5' y='23.250001' width='15.0' height='128.5' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<polygon points='143.5,126.0 156.5,126.0 156.5,139.0 143.5,139.0' fill='#1a1a1a'/>
+<polygon points='143.5,71.0 156.5,71.0 156.5,84.0 143.5,84.0' fill='#1a1a1a'/>
+<line x1='142.5' y1='87.5' x2='157.5' y2='87.5' stroke='#1a1a1a' stroke-width='1.0' stroke-linecap='square'/>
+<line x1='143.5' y1='111.0' x2='143.5' y2='124.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='111.0' x2='143.5' y2='111.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='124.0' x2='156.5' y2='111.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='124.0' x2='156.5' y2='124.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='56.0' x2='143.5' y2='69.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='56.0' x2='143.5' y2='56.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='69.0' x2='156.5' y2='56.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='69.0' x2='156.5' y2='69.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<text x='150.0' y='31.500001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' font-style='italic' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Atten.</text>
+<text x='143.0' y='144.5' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' font-style='italic' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Schenk</text>
+<circle cx='150.0' cy='132.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='132.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='132.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='117.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='117.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='117.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='97.499999' r='6.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='97.499999' r='4.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
+<line x1='150.0' y1='91.199999' x2='150.0' y2='94.499999' stroke='#1a1a1a' stroke-width='0.6' stroke-linecap='round'/>
+<circle cx='150.0' cy='77.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='77.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='77.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='62.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='62.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='62.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='42.499999' r='6.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='42.499999' r='4.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
+<line x1='150.0' y1='36.199999000000005' x2='150.0' y2='39.499999' stroke='#1a1a1a' stroke-width='0.6' stroke-linecap='round'/>
+<circle cx='150.0' cy='26.249999' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<circle cx='150.0' cy='148.75' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<path d='M120.50 62.50 C135.25 62.50 135.25 62.50 150.00 62.50' fill='none' stroke='#d9302c' stroke-width='0.9' stroke-linecap='round'/>
+<path d='M150.00 77.50 C164.75 77.50 164.75 77.50 179.50 77.50' fill='none' stroke='#d9302c' stroke-width='0.9' stroke-linecap='round' marker-end='url(#r)'/>
+<path d='M150.00 132.50 C164.75 132.50 164.75 132.50 179.50 132.50' fill='none' stroke='#d9302c' stroke-width='0.9' stroke-linecap='round' marker-end='url(#r)'/>
+<circle cx='150.0' cy='62.499999' r='2.3' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.3'/>
+<circle cx='150.0' cy='77.499999' r='2.3' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.3'/>
+<circle cx='150.0' cy='132.499999' r='2.3' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.3'/>
+<rect x='82.5' y='56.999999' width='38' height='11' rx='1.2' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<text x='101.50' y='60.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.4' font-weight='bold' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>LFO</text>
+<text x='101.50' y='65.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='middle' dominant-baseline='central'>out</text>
+<rect x='179.5' y='71.999999' width='38' height='11' rx='1.2' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<text x='198.50' y='75.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.4' font-weight='bold' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Filter</text>
+<text x='198.50' y='80.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='middle' dominant-baseline='central'>cutoff CV in</text>
+<rect x='179.5' y='126.999999' width='38' height='11' rx='1.2' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<text x='198.50' y='130.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.4' font-weight='bold' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>VCO</text>
+<text x='198.50' y='135.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='middle' dominant-baseline='central'>pulse width CV in</text>
+<text x='139.50' y='115.70' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#d9302c' text-anchor='end' dominant-baseline='central'>In 2 empty</text>
+<text x='139.50' y='119.90' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='end' dominant-baseline='central'>copies In 1</text>
+</svg>
