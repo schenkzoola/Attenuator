@@ -8,7 +8,7 @@ A machine-readable copy is in [BOM.csv](BOM.csv). The original spreadsheet is [P
 | 2 | RV1, RV2 | Potentiometer, 100 kΩ linear, 9 mm, vertical PCB mount with board-lock lugs, 15 mm D shaft, with nut | TT Electronics/BI P0915N-FC15BR100K, or equivalent | [Digi-Key 987-1709-ND](https://www.digikey.com/product-detail/en/tt-electronics-bi/P0915N-FC15BR100K/987-1709-ND/5957453), [datasheet (P09 series)](https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Datasheet/P09x.pdf). No center detent. An equivalent must fit the 9 mm footprint (3 pins in a row, 2 mounting lugs), have a threaded bushing that fits the 7 mm panel hole, and a 6 mm shaft that fits the knob. |
 | 2 | — | Knob, skirted, 15 mm | Davies Molding 1227-J, or equivalent | [Digi-Key 1722-1247-ND](https://www.digikey.com/product-detail/en/davies-molding-llc/1227-J/1722-1247-ND/6566470). The skirt hides the pot nut. An equivalent must fit the pot shaft and cover the nut. |
 | 1 | — | Main PCB, 15 × 100 mm, 2-layer, 1.6 mm FR4 | Schenktronics | Gerbers: [PassiveAttenuatorGerbers.zip](../PassiveAttenuator/PassiveAttenuatorGerbers.zip) |
-| 1 | — | Faceplate, 3HP (15 × 128.5 mm), 1.6 mm FR4 PCB | Schenktronics | Gerbers: [PassiveAttenuatorFaceplateGerbers.zip](../PassiveAttenuatorFaceplate/PassiveAttenuatorFaceplateGerbers.zip) |
+| 1 | — | Faceplate, 3HP (15 × 128.5 mm), 1.6 mm aluminium PCB | Schenktronics | Single-sided, so it can also be made in FR4. Gerbers: [PassiveAttenuatorFaceplateGerbers.zip](../PassiveAttenuatorFaceplate/PassiveAttenuatorFaceplateGerbers.zip) |
 
 ## Not included
 
