@@ -3,4 +3,4 @@ Qty,Reference,Description,Manufacturer,Part Number,Link
 2,"RV1, RV2","Potentiometer, 100k linear, 9mm, vertical PCB mount with board-lock lugs, 15mm D shaft, with nut (or equivalent)",TT Electronics/BI,P0915N-FC15BR100K,https://www.digikey.com/product-detail/en/tt-electronics-bi/P0915N-FC15BR100K/987-1709-ND/5957453
 2,,"Knob, skirted, 15mm, fits pot shaft and covers nut (or equivalent)",Davies Molding,1227-J,https://www.digikey.com/product-detail/en/davies-molding-llc/1227-J/1722-1247-ND/6566470
 1,,"Main PCB, 15x100mm, 2-layer, 1.6mm",Schenktronics,Passive Attenuator v1.0,
-1,,"Faceplate, 3HP, 1.6mm FR4",Schenktronics,Passive Attenuator Faceplate,
+1,,"Faceplate, 3HP, 1.6mm aluminium PCB",Schenktronics,Passive Attenuator Faceplate,
