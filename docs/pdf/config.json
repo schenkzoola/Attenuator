@@ -1,0 +1,10 @@
+{
+  "product": "Passive Attenuator",
+  "pcbVersion": "v1.0",
+  "repo": "schenkzoola/Attenuator",
+  "branch": "master",
+  "documents": [
+    { "src": "manual.md", "out": "passive-attenuator-manual.pdf", "title": "User Manual" },
+    { "src": "assembly-guide.md", "out": "passive-attenuator-assembly-guide.pdf", "title": "Assembly Guide" }
+  ]
+}

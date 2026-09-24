@@ -1,0 +1,109 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0.0 22 166.5 56' width='666' height='224'>
+<title>Step 2: fit the faceplate</title>
+<rect x='0.0' y='22' width='166.5' height='56' fill='#fff'/>
+<defs><marker id='arr' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='5' markerHeight='5' orient='auto-start-reverse'><path d='M0 1 L10 5 L0 9 z' fill='#1a1a1a'/></marker></defs>
+<rect x='16.25' y='60' width='100.0' height='1.6' fill='#f1f1f1' stroke='#1a1a1a' stroke-width='0.3'/>
+<rect x='36.75' y='51' width='9' height='9' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='38.25' y='46.5' width='6' height='4.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='38.25' y1='47.7' x2='44.25' y2='47.7' stroke='#888' stroke-width='0.15'/>
+<line x1='38.25' y1='48.9' x2='44.25' y2='48.9' stroke='#888' stroke-width='0.15'/>
+<line x1='38.25' y1='50.1' x2='44.25' y2='50.1' stroke='#888' stroke-width='0.15'/>
+<line x1='38.25' y1='61.6' x2='38.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='44.25' y1='61.6' x2='44.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='51.75' y='51' width='9' height='9' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='53.25' y='46.5' width='6' height='4.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='53.25' y1='47.7' x2='59.25' y2='47.7' stroke='#888' stroke-width='0.15'/>
+<line x1='53.25' y1='48.9' x2='59.25' y2='48.9' stroke='#888' stroke-width='0.15'/>
+<line x1='53.25' y1='50.1' x2='59.25' y2='50.1' stroke='#888' stroke-width='0.15'/>
+<line x1='53.25' y1='61.6' x2='53.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='59.25' y1='61.6' x2='59.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='91.75' y='51' width='9' height='9' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='93.25' y='46.5' width='6' height='4.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='93.25' y1='47.7' x2='99.25' y2='47.7' stroke='#888' stroke-width='0.15'/>
+<line x1='93.25' y1='48.9' x2='99.25' y2='48.9' stroke='#888' stroke-width='0.15'/>
+<line x1='93.25' y1='50.1' x2='99.25' y2='50.1' stroke='#888' stroke-width='0.15'/>
+<line x1='93.25' y1='61.6' x2='93.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='99.25' y1='61.6' x2='99.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='106.75' y='51' width='9' height='9' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='108.25' y='46.5' width='6' height='4.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='108.25' y1='47.7' x2='114.25' y2='47.7' stroke='#888' stroke-width='0.15'/>
+<line x1='108.25' y1='48.9' x2='114.25' y2='48.9' stroke='#888' stroke-width='0.15'/>
+<line x1='108.25' y1='50.1' x2='114.25' y2='50.1' stroke='#888' stroke-width='0.15'/>
+<line x1='108.25' y1='61.6' x2='108.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='114.25' y1='61.6' x2='114.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='16.25' y='51' width='10' height='9' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='17.75' y='46.5' width='7' height='4.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='18.25' y='34.5' width='6' height='12' fill='#fff' stroke='#d9302c' stroke-width='0.35'/>
+<line x1='17.75' y1='47.7' x2='24.75' y2='47.7' stroke='#888' stroke-width='0.15'/>
+<line x1='17.75' y1='48.9' x2='24.75' y2='48.9' stroke='#888' stroke-width='0.15'/>
+<line x1='17.75' y1='50.1' x2='24.75' y2='50.1' stroke='#888' stroke-width='0.15'/>
+<line x1='16.5' y1='61.6' x2='16.5' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='18.75' y1='61.6' x2='18.75' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='21.25' y1='61.6' x2='21.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='26.0' y1='61.6' x2='26.0' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='71.25' y='51' width='10' height='9' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='72.75' y='46.5' width='7' height='4.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='73.25' y='34.5' width='6' height='12' fill='#fff' stroke='#d9302c' stroke-width='0.35'/>
+<line x1='72.75' y1='47.7' x2='79.75' y2='47.7' stroke='#888' stroke-width='0.15'/>
+<line x1='72.75' y1='48.9' x2='79.75' y2='48.9' stroke='#888' stroke-width='0.15'/>
+<line x1='72.75' y1='50.1' x2='79.75' y2='50.1' stroke='#888' stroke-width='0.15'/>
+<line x1='71.5' y1='61.6' x2='71.5' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='73.75' y1='61.6' x2='73.75' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='76.25' y1='61.6' x2='76.25' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='81.0' y1='61.6' x2='81.0' y2='63.6' stroke='#1a1a1a' stroke-width='0.35'/>
+<rect x='2.00' y='35' width='1.40' height='1.6' fill='#1a1a1a'/>
+<rect x='6.60' y='35' width='11.15' height='1.6' fill='#1a1a1a'/>
+<rect x='24.75' y='35' width='13.50' height='1.6' fill='#1a1a1a'/>
+<rect x='44.25' y='35' width='9.00' height='1.6' fill='#1a1a1a'/>
+<rect x='59.25' y='35' width='13.50' height='1.6' fill='#1a1a1a'/>
+<rect x='79.75' y='35' width='13.50' height='1.6' fill='#1a1a1a'/>
+<rect x='99.25' y='35' width='9.00' height='1.6' fill='#1a1a1a'/>
+<rect x='114.25' y='35' width='11.65' height='1.6' fill='#1a1a1a'/>
+<rect x='129.10' y='35' width='1.40' height='1.6' fill='#1a1a1a'/>
+<rect x='37.25' y='26' width='8' height='2.2' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='38.75' y1='26' x2='38.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='40.45' y1='26' x2='40.45' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='42.05' y1='26' x2='42.05' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='43.75' y1='26' x2='43.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<rect x='52.25' y='26' width='8' height='2.2' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='53.75' y1='26' x2='53.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='55.45' y1='26' x2='55.45' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='57.05' y1='26' x2='57.05' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='58.75' y1='26' x2='58.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<rect x='92.25' y='26' width='8' height='2.2' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='93.75' y1='26' x2='93.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='95.45' y1='26' x2='95.45' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='97.05' y1='26' x2='97.05' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='98.75' y1='26' x2='98.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<rect x='107.25' y='26' width='8' height='2.2' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='108.75' y1='26' x2='108.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='110.45' y1='26' x2='110.45' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='112.05' y1='26' x2='112.05' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='113.75' y1='26' x2='113.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<rect x='16.75' y='26' width='9' height='2.2' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='18.75' y1='26' x2='18.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='20.45' y1='26' x2='20.45' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='22.05' y1='26' x2='22.05' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='23.75' y1='26' x2='23.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<rect x='71.75' y='26' width='9' height='2.2' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<line x1='73.75' y1='26' x2='73.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='75.45' y1='26' x2='75.45' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='77.05' y1='26' x2='77.05' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='78.75' y1='26' x2='78.75' y2='28.2' stroke='#888' stroke-width='0.15'/>
+<line x1='41.25' y1='29.00' x2='41.25' y2='34.20' stroke='#1a1a1a' stroke-width='0.3' marker-end='url(#arr)'/>
+<line x1='41.25' y1='37.80' x2='41.25' y2='45.70' stroke='#1a1a1a' stroke-width='0.3' marker-end='url(#arr)'/>
+<line x1='111.25' y1='29.00' x2='111.25' y2='34.20' stroke='#1a1a1a' stroke-width='0.3' marker-end='url(#arr)'/>
+<line x1='111.25' y1='37.80' x2='111.25' y2='45.70' stroke='#1a1a1a' stroke-width='0.3' marker-end='url(#arr)'/>
+<text x='133.50' y='27.10' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.6' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Nuts</text>
+<text x='133.50' y='30.30' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>finger-tight first</text>
+<text x='133.50' y='35.80' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.6' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Faceplate</text>
+<text x='133.50' y='39.00' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>“Atten.” end over RV1</text>
+<text x='133.50' y='54.00' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.6' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Pots and jacks</text>
+<text x='133.50' y='57.20' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>not soldered yet</text>
+<text x='133.50' y='60.80' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.6' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>PCB</text>
+<text x='76.25' y='67.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.6' font-weight='bold' fill='#d9302c' text-anchor='middle' dominant-baseline='central'>Straighten the pot shafts in their holes,</text>
+<text x='76.25' y='70.70' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='middle' dominant-baseline='central'>then tighten the nuts</text>
+<text x='16.25' y='67.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>RV1 end</text>
+<text x='116.25' y='67.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='end' dominant-baseline='central'>J4 end</text>
+<text x='2.00' y='75.00' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>Side view, not to scale vertically</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='141.5 22.250001 17.0 130.5' width='68' height='522'>
+<title>Passive Attenuator front panel</title>
+<rect x='141.5' y='22.250001' width='17.0' height='130.5' fill='#fff'/>
+<rect x='142.5' y='23.250001' width='15.0' height='128.5' rx='0.4' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<polygon points='143.5,126.0 156.5,126.0 156.5,139.0 143.5,139.0' fill='#1a1a1a'/>
+<polygon points='143.5,71.0 156.5,71.0 156.5,84.0 143.5,84.0' fill='#1a1a1a'/>
+<line x1='142.5' y1='87.5' x2='157.5' y2='87.5' stroke='#1a1a1a' stroke-width='1.0' stroke-linecap='square'/>
+<line x1='143.5' y1='111.0' x2='143.5' y2='124.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='111.0' x2='143.5' y2='111.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='124.0' x2='156.5' y2='111.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='124.0' x2='156.5' y2='124.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='56.0' x2='143.5' y2='69.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='56.0' x2='143.5' y2='56.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='156.5' y1='69.0' x2='156.5' y2='56.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<line x1='143.5' y1='69.0' x2='156.5' y2='69.0' stroke='#1a1a1a' stroke-width='0.5' stroke-linecap='square'/>
+<text x='150.0' y='31.500001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' font-style='italic' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Atten.</text>
+<text x='143.0' y='144.5' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' font-style='italic' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Schenk</text>
+<circle cx='150.0' cy='132.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='132.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='132.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='117.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='117.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='117.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='97.499999' r='6.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='97.499999' r='4.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
+<line x1='150.0' y1='91.199999' x2='150.0' y2='94.499999' stroke='#1a1a1a' stroke-width='0.6' stroke-linecap='round'/>
+<circle cx='150.0' cy='77.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='77.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='77.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='62.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='62.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='150.0' cy='62.499999' r='1.8' fill='#1a1a1a'/>
+<circle cx='150.0' cy='42.499999' r='6.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='150.0' cy='42.499999' r='4.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
+<line x1='150.0' y1='36.199999000000005' x2='150.0' y2='39.499999' stroke='#1a1a1a' stroke-width='0.6' stroke-linecap='round'/>
+<circle cx='150.0' cy='26.249999' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+<circle cx='150.0' cy='148.75' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
+</svg>
