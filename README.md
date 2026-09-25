@@ -60,5 +60,6 @@ The Schenktronics name and logo are trademarks of Nathan Schenk and are not cove
 ## Links
 
 - Tindie: <https://www.tindie.com/products/schenktronics/passive-attenuator/>
+- ModularGrid: <https://modulargrid.net/e/schenktronics-atten>
 - Build video: <https://www.youtube.com/watch?v=RKkGsIigaSM>
 - Website: <https://schenktronics.com>
