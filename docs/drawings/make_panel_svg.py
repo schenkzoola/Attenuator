@@ -4,7 +4,13 @@
 Writes docs/images/panel.svg (annotated front view) and docs/images/panel-plain.svg
 (the panel alone, for packaging labels where small captions would be lost).
 Run from anywhere: python3 docs/drawings/make_panel_svg.py
+
+The faceplate file is KiCad's S-expression format (KiCad 10: footprints, nested
+stroke/effects blocks, quoted layer names). Parsed with a small generic
+S-expression reader rather than ad hoc regexes, since graphics like the logo
+live inside a footprint and need its position and rotation applied.
 """
+import math
 import re
 from pathlib import Path
 
@@ -20,34 +26,129 @@ FONT = "font-family='DejaVu Sans, Helvetica, Arial, sans-serif'"
 # Drill sizes (mm) that identify each kind of hole.
 JACK, POT = 6.0, 7.0
 
+# Footprints that carry the Schenktronics wordmark as silkscreen polygons.
+LOGO_FOOTPRINT = "SchentronicsLogo"
+
+
+def read_sexp(text):
+    """Parse a KiCad S-expression file into nested lists of strings."""
+    tokens = re.findall(r'\(|\)|"(?:[^"\\]|\\.)*"|[^\s()]+', text)
+
+    def parse(pos):
+        items = []
+        while pos < len(tokens):
+            tok = tokens[pos]
+            if tok == "(":
+                node, pos = parse(pos + 1)
+                items.append(node)
+            elif tok == ")":
+                return items, pos + 1
+            else:
+                items.append(tok[1:-1] if tok.startswith('"') else tok)
+                pos += 1
+        return items, pos
+
+    node, _ = parse(1)  # skip the opening paren of (kicad_pcb ...)
+    return node
+
+
+def tagged(node, name):
+    """Direct children of node that are lists starting with `name`."""
+    return [c for c in node if isinstance(c, list) and c and c[0] == name]
+
+
+def first(node, name):
+    found = tagged(node, name)
+    return found[0] if found else None
+
+
+def at_xyr(node):
+    a = first(node, "at")
+    vals = [float(v) for v in a[1:]] if a else []
+    while len(vals) < 3:
+        vals.append(0.0)
+    return tuple(vals[:3])
+
+
+def stroke_width(node):
+    s = first(node, "stroke")
+    w = first(s, "width") if s else None
+    return float(w[1]) if w else 0.2
+
 
 def parse(path):
-    s = path.read_text()
-    edges = [tuple(map(float, m)) for m in re.findall(
-        r"\(gr_line \(start ([\d.]+) ([\d.]+)\) \(end ([\d.]+) ([\d.]+)\) \(layer Edge\.Cuts\)", s)]
+    root = read_sexp(path.read_text())
+
+    edges = []
+    for e in tagged(root, "gr_line"):
+        if first(e, "layer") and first(e, "layer")[1] == "Edge.Cuts":
+            sx, sy = (float(v) for v in first(e, "start")[1:])
+            ex, ey = (float(v) for v in first(e, "end")[1:])
+            edges.append((sx, sy, ex, ey))
     xs = [v for e in edges for v in (e[0], e[2])]
     ys = [v for e in edges for v in (e[1], e[3])]
     outline = (min(xs), min(ys), max(xs), max(ys))
 
     holes = []
-    for m in re.finditer(r"\(module Mounting_Holes:\S+.*?\(at ([\d.]+) ([\d.]+)(?: [-\d.]+)?\).*?\(drill ([\d.]+)\)",
-                         s, re.S):
-        holes.append((float(m[1]), float(m[2]), float(m[3])))
+    for fp in tagged(root, "footprint"):
+        if "Mounting_Holes" in fp[1]:
+            x, y, _ = at_xyr(fp)
+            pad = first(fp, "pad")
+            holes.append((x, y, float(first(pad, "drill")[1])))
 
-    silk_lines = [(tuple(map(float, m[:4])), float(m[4])) for m in re.findall(
-        r"\(gr_line \(start ([\d.]+) ([\d.]+)\) \(end ([\d.]+) ([\d.]+)\) \(layer F\.SilkS\) \(width ([\d.]+)\)", s)]
-    # Filled silkscreen areas (the solid boxes behind the output jacks).
-    silk_fills = []
-    for z in re.finditer(r"\(zone [^\n]*\(layer F\.SilkS\).*?\(polygon\s*\(pts(.*?)\(filled_polygon", s, re.S):
-        silk_fills.append([tuple(map(float, p)) for p in re.findall(r"\(xy ([\d.]+) ([\d.]+)\)", z[1])])
+    silk_lines = []
+    for e in tagged(root, "gr_line"):
+        layer = first(e, "layer")
+        if layer and layer[1] == "F.SilkS":
+            sx, sy = (float(v) for v in first(e, "start")[1:])
+            ex, ey = (float(v) for v in first(e, "end")[1:])
+            silk_lines.append(((sx, sy, ex, ey), stroke_width(e)))
+
+    # Rings around the jacks: a thin ring marks an input, a bold ring an output.
+    silk_rings = []
+    for c in tagged(root, "gr_circle"):
+        layer = first(c, "layer")
+        if layer and layer[1] == "F.SilkS":
+            cx, cy = (float(v) for v in first(c, "center")[1:])
+            ex, ey = (float(v) for v in first(c, "end")[1:])
+            r = ((ex - cx) ** 2 + (ey - cy) ** 2) ** 0.5
+            silk_rings.append((cx, cy, r, stroke_width(c)))
+
     texts = []
-    for m in re.finditer(r"\(gr_text (\S+) \(at ([\d.]+) ([\d.]+)(?: ([\d.]+))?\) \(layer F\.SilkS\)"
-                         r"(.*?)\n  \)", s, re.S):
-        size = re.search(r"\(size ([\d.]+)", m[5])
-        justify = re.search(r"\(justify (\w+)", m[5])
-        texts.append(dict(text=m[1], x=float(m[2]), y=float(m[3]), rot=float(m[4] or 0),
-                          size=float(size[1]), justify=justify and justify[1], italic="italic" in m[5]))
-    return outline, holes, silk_lines, silk_fills, texts
+    for t in tagged(root, "gr_text"):
+        layer = first(t, "layer")
+        if not (layer and layer[1] == "F.SilkS"):
+            continue
+        x, y, rot = at_xyr(t)
+        effects = first(t, "effects")
+        font = first(effects, "font")
+        size = float(first(font, "size")[1])
+        justify = first(effects, "justify")
+        italic = first(font, "italic") is not None
+        texts.append(dict(text=t[1], x=x, y=y, rot=rot, size=size,
+                          justify=justify[1] if justify else None, italic=italic))
+
+    logo_polys = []
+    for fp in tagged(root, "footprint"):
+        if LOGO_FOOTPRINT not in fp[1]:
+            continue
+        ox, oy, orot = at_xyr(fp)
+        theta = math.radians(orot)
+        cos_t, sin_t = math.cos(theta), math.sin(theta)
+        for poly in tagged(fp, "fp_poly"):
+            layer = first(poly, "layer")
+            if not (layer and layer[1] == "F.SilkS"):
+                continue
+            pts = []
+            for xy in tagged(first(poly, "pts"), "xy"):
+                lx, ly = float(xy[1]), float(xy[2])
+                # KiCad rotates footprints clockwise for positive angles.
+                bx = ox + lx * cos_t + ly * sin_t
+                by = oy - lx * sin_t + ly * cos_t
+                pts.append((bx, by))
+            logo_polys.append(pts)
+
+    return outline, holes, silk_lines, silk_rings, texts, logo_polys
 
 
 def knob(x, y):
@@ -58,13 +159,15 @@ def knob(x, y):
             f"stroke-linecap='round'/>"]
 
 
-def panel_body(outline, holes, silk_lines, silk_fills, texts):
+def panel_body(outline, holes, silk_lines, silk_rings, texts, logo_polys):
     """SVG elements for the faceplate itself, in board coordinates (mm)."""
     x0, y0, x1, y1 = outline
     el = [f"<rect x='{x0}' y='{y0}' width='{x1 - x0}' height='{y1 - y0}' rx='0.4' "
           f"fill='#fff' stroke='{INK}' stroke-width='0.3'/>"]
-    for pts in silk_fills:
+    for pts in logo_polys:
         el.append(f"<polygon points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='{INK}'/>")
+    for cx, cy, r, w in silk_rings:
+        el.append(f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='none' stroke='{INK}' stroke-width='{w}'/>")
     for (xa, ya, xb, yb), w in silk_lines:
         el.append(f"<line x1='{xa}' y1='{ya}' x2='{xb}' y2='{yb}' stroke='{INK}' "
                   f"stroke-width='{w}' stroke-linecap='square'/>")
@@ -119,11 +222,11 @@ def annotated(outline, holes, *silk):
 
     (k1, i1, o1), (k2, i2, o2) = controls(holes)
     body += label(k1, "Level 1", "turn right for more", x1 - 2)
-    body += label(i1, "In 1", "outlined box = input", x1 - 3)
-    body += label(o1, "Out 1", "solid box = output", x1 - 3)
+    body += label(i1, "In 1", "thin ring = input", x1 - 3)
+    body += label(o1, "Out 1", "bold ring = output", x1 - 3)
     body += label(k2, "Level 2", "turn right for more", x1 - 2)
     body += label(i2, "In 2", "unplugged: copies In 1", x1 - 3)
-    body += label(o2, "Out 2", "solid box = output", x1 - 3)
+    body += label(o2, "Out 2", "bold ring = output", x1 - 3)
     pad = 4
     return svg((x0 - pad, y0 - pad, (x1 - x0) + 44 + pad, (y1 - y0) + 2 * pad), body,
                "Passive Attenuator front panel")

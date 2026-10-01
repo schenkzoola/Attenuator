@@ -25,7 +25,7 @@ The module is just jacks and potentiometers, so it does not need power.
 
 <img src="images/panel.svg" alt="Panel layout: channel 1 on top (Level 1, In 1, Out 1), a divider line, then channel 2 (Level 2, In 2, Out 2)" width="300">
 
-The panel has two identical channels, separated by the thick line. In each channel, the knob is at the top, the input is the jack in the **outlined box**, and the output is the jack in the **solid box**.
+The panel has two identical channels, separated by the thick line. In each channel, the knob is at the top, the input is the jack with the **thin ring**, and the output is the jack with the **bold ring**.
 
 ## Using the module
 
@@ -74,7 +74,7 @@ With a cable in In 2, the channels are independent. Here channel 1 sets how far 
 
 ## Good practice
 
-- **Patch outputs into the inputs.** Plug sources into the In jacks (outlined boxes), not the Out jacks. A source patched into an Out jack is wired straight to the knob's wiper, so the knob won't work as expected, and turning it fully anticlockwise connects that source directly to ground. Most Eurorack outputs are protected against this, but not all are, so avoid it.
+- **Patch outputs into the inputs.** Plug sources into the In jacks (thin ring), not the Out jacks. A source patched into an Out jack is wired straight to the knob's wiper, so the knob won't work as expected, and turning it fully anticlockwise connects that source directly to ground. Most Eurorack outputs are protected against this, but not all are, so avoid it.
 - **Full level is slightly below the input.** A passive attenuator loads the module feeding it and the module it feeds. With typical Eurorack modules, fully clockwise gives a little less than the original signal, and the middle of the knob gives a bit less than half. This is normal for any passive attenuator. For exact levels, use a buffered attenuator.
 - **Pitch CV (V/oct):** attenuating a pitch CV changes the intervals, so the oscillator won't track in tune. That can be a creative effect, but it's not a way to transpose.
 - **One source into both channels:** when In 2 is empty, In 1 feeds both knobs, so it loads the source a little more. It makes no difference with most modules.
