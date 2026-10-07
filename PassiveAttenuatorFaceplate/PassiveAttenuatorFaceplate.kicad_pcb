@@ -591,7 +591,7 @@
 	(footprint "_NTSFootprints:SchentronicsLogoSsmall"
 		(layer "F.Cu")
 		(uuid "a261a776-a556-48da-aac9-d56de65cbfe5")
-		(at 144.5 149.5)
+		(at 155.2079 148.7500)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -816,10 +816,23 @@
 		(uuid "00000000-0000-0000-0000-00005de00b9b")
 		(effects
 			(font
+				(face "Orbitron")
 				(size 2.5 2.5)
 				(thickness 0.4)
-				(italic yes)
 			)
+		)
+	)
+	(gr_text "ST-02"
+		(at 144.7500 149.9597 90)
+		(layer "F.SilkS")
+		(uuid "3d2c1b0a-9f8e-4d7c-b6a5-948372615049")
+		(effects
+			(font
+				(face "Orbitron")
+				(size 1.7 1.7)
+				(thickness 0.3)
+			)
+			(justify left)
 		)
 	)
 	(zone
