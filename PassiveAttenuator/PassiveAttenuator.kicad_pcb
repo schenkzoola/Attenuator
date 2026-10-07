@@ -10,6 +10,12 @@
   )
 
   (page A4)
+  (title_block
+    (title "Passive Attenuator")
+    (date 2026-10-07)
+    (rev 1.0)
+    (company Schenktronics)
+  )
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
