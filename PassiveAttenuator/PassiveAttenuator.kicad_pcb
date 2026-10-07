@@ -15,6 +15,7 @@
     (date 2026-10-07)
     (rev 1.0)
     (company Schenktronics)
+    (comment 4 "PCB-ST02-MAIN")
   )
   (layers
     (0 F.Cu signal)
