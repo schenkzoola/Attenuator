@@ -104,7 +104,7 @@ def parse(path):
             ex, ey = (float(v) for v in first(e, "end")[1:])
             silk_lines.append(((sx, sy, ex, ey), stroke_width(e)))
 
-    # Rings around the jacks: a thin ring marks an input, a bold ring an output.
+    # Rings around the jacks: a bold ring marks an output; inputs are unmarked.
     silk_rings = []
     for c in tagged(root, "gr_circle"):
         layer = first(c, "layer")
@@ -222,7 +222,7 @@ def annotated(outline, holes, *silk):
 
     (k1, i1, o1), (k2, i2, o2) = controls(holes)
     body += label(k1, "Level 1", "turn right for more", x1 - 2)
-    body += label(i1, "In 1", "thin ring = input", x1 - 3)
+    body += label(i1, "In 1", "no ring: input", x1 - 3)
     body += label(o1, "Out 1", "bold ring = output", x1 - 3)
     body += label(k2, "Level 2", "turn right for more", x1 - 2)
     body += label(i2, "In 2", "unplugged: copies In 1", x1 - 3)
