@@ -28,7 +28,7 @@ Check your kit against this list before you start (full details in the [BOM](BOM
 
 ## Before you start
 
-- The pots and jacks go on the **front** of the PCB, which is the side with the part outlines (RV1, RV2, J1–J4). The side printed "Passive Attenuator v1.0 / schenktronics.com" is the back, and you solder there.
+- The pots and jacks go on the **front** of the PCB, which is the side with the part outlines (RV1, RV2, J1–J4). The side printed "ST-02 v1.0 / Levels / schenktronics.com" is the back, and you solder there.
 - **Do not solder anything until the faceplate is fitted.** The pot shafts and jacks all pass through the faceplate, which holds them in line while you solder. Parts soldered first can end up crooked in their panel holes.
 
 ## Step 1 — Fit the pots and jacks

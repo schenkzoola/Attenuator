@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Passive Attenuator Faceplate")
+		(title "Levels Faceplate")
 		(date "2026-10-07")
 		(rev "1.0")
 		(company "Schenktronics")
