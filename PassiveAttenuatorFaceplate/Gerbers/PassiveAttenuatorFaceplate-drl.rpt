@@ -1,5 +1,5 @@
 Drill report for PassiveAttenuatorFaceplate.kicad_pcb
-Created on 2026-09-30T22:12:00
+Created on 2026-10-07T19:37:18
 
 Copper Layer Stackup:
     =============================================================
@@ -7,14 +7,14 @@ Copper Layer Stackup:
     L2 :  B.Cu                      back
 
 
-Drill file 'PassiveAttenuatorFaceplate-PTH-drl.gbr' contains
+Drill file 'PassiveAttenuatorFaceplate-PTH.drl' contains
     plated through holes:
     =============================================================
 
     Total plated holes count 0
 
 
-Drill file 'PassiveAttenuatorFaceplate-NPTH-drl.gbr' contains
+Drill file 'PassiveAttenuatorFaceplate-NPTH.drl' contains
     unplated through holes:
     =============================================================
     T1  3.200mm  0.1260"  (2 holes))
