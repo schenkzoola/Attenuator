@@ -1,4 +1,4 @@
-# Bill of Materials — Passive Attenuator v1.0
+# Bill of Materials — Levels v1.0
 
 A machine-readable copy is in [BOM.csv](BOM.csv). The original spreadsheet is [PassiveAttenuator/BOM.ods](../PassiveAttenuator/BOM.ods).
 

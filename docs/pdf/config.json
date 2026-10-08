@@ -1,10 +1,10 @@
 {
-  "product": "Passive Attenuator",
+  "product": "Levels",
   "pcbVersion": "v1.0",
-  "repo": "schenkzoola/ST02-attenuator",
+  "repo": "schenkzoola/ST02-levels",
   "branch": "master",
   "documents": [
-    { "src": "manual.md", "out": "passive-attenuator-manual.pdf", "title": "User Manual" },
-    { "src": "assembly-guide.md", "out": "passive-attenuator-assembly-guide.pdf", "title": "Assembly Guide" }
+    { "src": "manual.md", "out": "levels-manual.pdf", "title": "User Manual" },
+    { "src": "assembly-guide.md", "out": "levels-assembly-guide.pdf", "title": "Assembly Guide" }
   ]
 }

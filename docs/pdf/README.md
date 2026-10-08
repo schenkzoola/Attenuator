@@ -2,8 +2,8 @@
 
 Printable versions of the docs:
 
-- [User Manual (PDF)](passive-attenuator-manual.pdf)
-- [Assembly Guide (PDF)](passive-attenuator-assembly-guide.pdf)
+- [User Manual (PDF)](levels-manual.pdf)
+- [Assembly Guide (PDF)](levels-assembly-guide.pdf)
 
 These are built from [`../manual.md`](../manual.md) and [`../assembly-guide.md`](../assembly-guide.md). **Don't edit the PDFs by hand.** Edit the Markdown instead.
 

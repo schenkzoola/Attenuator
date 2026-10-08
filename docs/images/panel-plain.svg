@@ -49,7 +49,7 @@
 <line x1='153.452768' y1='42.5' x2='157.202768' y2='42.5' stroke='#1a1a1a' stroke-width='0.3' stroke-linecap='square'/>
 <line x1='153.452768' y1='97.5' x2='157.202768' y2='97.5' stroke='#1a1a1a' stroke-width='0.3' stroke-linecap='square'/>
 <text x='144.75' y='149.9597' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.9549999999999998' fill='#1a1a1a' text-anchor='start' dominant-baseline='central' transform='rotate(-90.0 144.75 149.9597)'>ST-02</text>
-<text x='150.0' y='31.500001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Attenuate</text>
+<text x='150.0' y='31.500001' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Levels</text>
 <circle cx='150.0' cy='148.75' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
 <circle cx='150.0' cy='77.499999' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
 <circle cx='150.0' cy='77.499999' r='3.1' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>

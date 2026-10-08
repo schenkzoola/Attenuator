@@ -1,10 +1,10 @@
-# Passive Attenuator — User Manual
+# Levels — User Manual
 
-<img src="images/front.jpg" alt="Passive Attenuator front panel" width="120">
+<img src="images/front.jpg" alt="Levels front panel" width="120">
 
 ## Overview
 
-The Passive Attenuator is a 3HP Eurorack utility module with two attenuators. Each one takes a signal at its input and gives you a quieter or smaller copy at its output, set by its knob. In 2 is normalled to In 1, so a single signal can feed both channels at different levels.
+Levels is a 3HP Eurorack utility module with two attenuators. Each one takes a signal at its input and gives you a quieter or smaller copy at its output, set by its knob. In 2 is normalled to In 1, so a single signal can feed both channels at different levels.
 
 The module is just jacks and potentiometers, so it does not need power.
 

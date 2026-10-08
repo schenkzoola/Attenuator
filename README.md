@@ -3,11 +3,11 @@
   <img src="docs/images/logo-dark.png" alt="Schenktronics" width="320">
 </picture>
 
-# Passive Attenuator
+# Levels
 
 A 3HP Eurorack dual passive attenuator from **Schenktronics**. It has two channels, each with an input, an output and a level knob. The second input is normalled to the first, so one signal can be sent out at two different levels. It needs no power.
 
-<img src="docs/images/front.jpg" alt="Passive Attenuator front panel" width="120">
+<img src="docs/images/front.jpg" alt="Levels front panel" width="120">
 
 ## Features
 
@@ -21,8 +21,8 @@ A 3HP Eurorack dual passive attenuator from **Schenktronics**. It has two channe
 
 | Document | For | PDF |
 |----------|-----|-----|
-| [User Manual](docs/manual.md) | Using the module | [PDF](docs/pdf/passive-attenuator-manual.pdf) |
-| [Assembly Guide](docs/assembly-guide.md) | Building the kit | [PDF](docs/pdf/passive-attenuator-assembly-guide.pdf) |
+| [User Manual](docs/manual.md) | Using the module | [PDF](docs/pdf/levels-manual.pdf) |
+| [Assembly Guide](docs/assembly-guide.md) | Building the kit | [PDF](docs/pdf/levels-assembly-guide.pdf) |
 | [Bill of Materials](docs/BOM.md) ([CSV](docs/BOM.csv)) | Parts and sourcing | |
 
 ## Repository layout

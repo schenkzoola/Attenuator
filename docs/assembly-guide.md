@@ -1,4 +1,4 @@
-# Passive Attenuator — Assembly Guide
+# Levels — Assembly Guide
 
 Building this kit takes about 20–30 minutes and needs 22 solder joints. It is a good first Eurorack kit.
 
