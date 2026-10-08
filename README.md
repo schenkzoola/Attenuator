@@ -28,15 +28,17 @@ A 3HP Eurorack dual passive attenuator from **Schenktronics**. It has two channe
 ## Repository layout
 
 ```
-PassiveAttenuator/            Main PCB (KiCad 5.1)
-  PassiveAttenuator.sch         Schematic
-  PassiveAttenuator.kicad_pcb   PCB layout
-  PassiveAttenuator.step        3D model
-  Gerbers/, *Gerbers.zip        Fabrication files
-  BOM.ods                       Original BOM spreadsheet
-PassiveAttenuatorFaceplate/   Faceplate (KiCad 5.1, made as an aluminium PCB)
-  *.dxf                         Panel outline and drill drawing
-  Gerbers/, *Gerbers.zip        Fabrication files
+hardware/
+  levels/                      Main PCB (KiCad 5.1 schematic, KiCad 10 PCB)
+    PassiveAttenuator.sch         Schematic
+    PassiveAttenuator.kicad_pcb   PCB layout
+    PassiveAttenuator.step        3D model
+    BOM.ods                       Original BOM spreadsheet
+  panel/                       Faceplate (KiCad 10, made as an aluminium PCB)
+    PassiveAttenuatorFaceplate.kicad_pcb  Faceplate layout
+manufacturing/
+  levels/                      Gerbers and drill files for the main PCB
+  panel/                       Gerbers, drill files and the panel drawing (.dxf)
 docs/                         Manual, assembly guide, BOM, images
   drawings/                     Scripts that generate the drawings
   pdf/                          PDF versions and their build settings
