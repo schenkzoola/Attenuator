@@ -1,0 +1,24 @@
+Drill report for LevelsFaceplate.kicad_pcb
+Created on 2026-10-07T21:11:50
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'LevelsFaceplate-PTH.drl' contains
+    plated through holes:
+    =============================================================
+
+    Total plated holes count 0
+
+
+Drill file 'LevelsFaceplate-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  3.200mm  0.1260"  (2 holes))
+    T2  6.000mm  0.2362"  (4 holes))
+    T3  7.000mm  0.2756"  (2 holes))
+
+    Total unplated holes count 8

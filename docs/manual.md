@@ -88,4 +88,4 @@ With a cable in In 2, the channels are independent. Here channel 1 sets how far 
 
 ## Circuit
 
-Each channel is one potentiometer wired as a voltage divider. The input jack's tip goes to one end of the pot, the other end goes to ground, and the wiper goes to the output jack's tip. In 2 (J3) is a switched jack: its normalling contact is wired to the tip of In 1 (J1), so In 1 feeds channel 2 until a plug is inserted in In 2. All sleeves and the pots' mounting lugs are wired to ground. The schematic is in [hardware/levels/PassiveAttenuator.sch](../hardware/levels/PassiveAttenuator.sch) (KiCad 5).
+Each channel is one potentiometer wired as a voltage divider. The input jack's tip goes to one end of the pot, the other end goes to ground, and the wiper goes to the output jack's tip. In 2 (J3) is a switched jack: its normalling contact is wired to the tip of In 1 (J1), so In 1 feeds channel 2 until a plug is inserted in In 2. All sleeves and the pots' mounting lugs are wired to ground. The schematic is in [hardware/levels/Levels.sch](../hardware/levels/Levels.sch) (KiCad 5).
