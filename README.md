@@ -7,7 +7,7 @@
 
 A 3HP Eurorack dual passive attenuator from **Schenktronics**. It has two channels, each with an input, an output and a level knob. The second input is normalled to the first, so one signal can be sent out at two different levels. It needs no power.
 
-<img src="docs/images/front.jpg" alt="Levels front panel" width="120">
+<img src="docs/images/outline-front.svg" alt="Levels front panel" width="120">
 
 ## Features
 

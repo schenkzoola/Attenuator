@@ -4,7 +4,7 @@ Building this kit takes about 20–30 minutes and needs 22 solder joints. It is 
 
 **Prefer to watch?** There's a video of the whole build: [Watch me solder together a passive attenuator module!](https://www.youtube.com/watch?v=RKkGsIigaSM)
 
-<img src="images/pcb-and-panel.jpg" alt="Faceplate and bare PCB, side by side" width="240">
+<img src="images/outline-bare-parts.svg" alt="The faceplate and the bare PCB, before assembly" width="260">
 
 ## What you need
 
@@ -86,7 +86,7 @@ Test with a multimeter. No power is needed. The easiest way to reach the tip and
 
 Install the module in your case with two M3 screws. Usage details are in the [User Manual](manual.md).
 
-<img src="images/front.jpg" alt="Assembled module" width="120">
+<img src="images/outline-iso-top-left.svg" alt="Assembled module, isometric view" width="160">
 
 ## Troubleshooting
 

@@ -1,6 +1,6 @@
 # Levels — User Manual
 
-<img src="images/front.jpg" alt="Levels front panel" width="120">
+<img src="images/outline-front.svg" alt="Levels front panel" width="120">
 
 ## Overview
 
@@ -20,6 +20,8 @@ The module is just jacks and potentiometers, so it does not need power.
 | Controls | 2 × level knobs, 100 kΩ linear potentiometers |
 | Range | Off (fully anticlockwise) to full level (fully clockwise). It can't amplify or invert. |
 | Signals | Audio, CV, gates, and both unipolar and bipolar signals |
+
+<img src="images/outline-side.svg" alt="Side view of the assembled module, showing the panel, PCB, jacks and pots" width="180">
 
 ## Panel layout
 
