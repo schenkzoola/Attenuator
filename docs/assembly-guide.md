@@ -15,7 +15,7 @@ Check your kit against this list before you start (full details in the [BOM](BOM
 - [ ] 1 × main PCB
 - [ ] 1 × faceplate
 - [ ] 4 × 3.5 mm jacks with nuts
-- [ ] 2 × 100 kΩ linear potentiometers with nuts
+- [ ] 2 × 100 kΩ linear potentiometers
 - [ ] 2 × knobs
 
 ### Tools
@@ -24,7 +24,7 @@ Check your kit against this list before you start (full details in the [BOM](BOM
 - Solder
 - Flush cutters
 - Multimeter with continuity (beep) and resistance modes
-- Nut driver or wrench for the jack and pot nuts (optional, but it avoids scratching the panel)
+- Nut driver or wrench for the jack nuts (optional, but it avoids scratching the panel)
 
 ## Before you start
 
@@ -41,19 +41,19 @@ Check your kit against this list before you start (full details in the [BOM](BOM
 
 ## Step 2 — Fit the faceplate
 
-1. Remove the nuts (and any washers) from the pots and jacks.
+1. Remove the nuts (and any washers) from the jacks. The pots have no nuts.
 2. Lower the faceplate over the parts. The "Atten." label goes at the top, over RV1. The pot shafts go through the two larger holes.
-3. Put the nuts back on and tighten them **finger-tight** for now.
-4. Check that each pot shaft sits straight and centered in its hole, and that the PCB is parallel to the faceplate. The legs have a little play in their holes, which gives you room to adjust.
-5. Tighten the nuts snugly. Do not overtighten them, because that can crack the jack threads or mark the panel.
+3. Put the jack nuts back on and tighten them **finger-tight** for now.
+4. Check that each pot shaft is centered in its hole, and that the PCB is parallel to the faceplate. The shafts are thinner than their holes, and nothing but the solder will hold them, so centering them now stops the knobs rubbing later. The legs have a little play in their holes, which gives you room to adjust.
+5. Tighten the jack nuts snugly. Do not overtighten them, because that can crack the jack threads or mark the panel.
 
-<img src="images/assembly-2-faceplate.svg" alt="Exploded side view: pots and jacks on the PCB, the faceplate above them, and the nuts on top" width="720">
+<img src="images/assembly-2-faceplate.svg" alt="Exploded side view: pots and jacks on the PCB, the faceplate above them, and the jack nuts on top" width="720">
 
 ## Step 3 — Solder the pots and jacks
 
 Turn the assembly over and solder from the back of the PCB.
 
-1. Tack one leg of each part: the square pad of each jack and the middle pin of each pot. Then check again that everything still sits straight. If it doesn't, reheat that joint and adjust.
+1. Tack one leg of each part: the square pad of each jack and the middle pin of each pot. Then check again that the pot shafts are still centered. If one isn't, reheat that joint and adjust.
 2. Solder the remaining pins and pads.
 3. Solder the four large mounting-lug pads of the pots. They connect to the ground plane, so they take a little longer to heat. Hold the iron on until the solder flows into the hole.
 4. Trim any long leads with flush cutters.
@@ -64,7 +64,7 @@ Inspect every joint. Each one should be shiny and cone-shaped, with no bridges b
 
 ## Step 4 — Fit the knobs
 
-Line up the flat inside each knob with the flat on the pot shaft, and push the knob on until its skirt covers the pot nut. The D-shaped shaft sets the knob's position, so there's nothing to align. Check that each knob turns without rubbing on the panel.
+Push each knob onto its pot shaft. The flat on the shaft sets the knob's position, so there's nothing to align. Check that each knob turns without rubbing on the panel.
 
 ## Step 5 — Test
 
@@ -97,5 +97,5 @@ Install the module in your case with two M3 screws. Usage details are in the [Us
 | A knob does nothing, or the output jumps | A bad joint on that pot. Reflow its three pins. |
 | The signal is shorted to ground | There is a solder bridge between a tip pad and a ground pad or lug. |
 | A knob rubs on the panel | The knob is pushed on too far. Pull it out slightly. |
-| A pot shaft is crooked in its hole | It was soldered before the nuts were tightened. Loosen the nuts, reheat the pot's pins and lugs, and straighten it. |
+| A pot shaft is crooked in its hole | It wasn't centered before soldering. Reheat the pot's pins and lugs, and straighten it. |
 | Full level is a little quieter than the input | This is normal for a passive attenuator. See [Good practice](manual.md#good-practice) in the manual. |

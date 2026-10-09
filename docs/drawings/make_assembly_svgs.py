@@ -8,10 +8,9 @@ Writes docs/images/assembly-*.svg.
 Run from anywhere: python3 docs/drawings/make_assembly_svgs.py
 """
 import math
-import re
 from pathlib import Path
 
-from make_panel_svg import FONT, INK, RED, svg
+from make_panel_svg import FONT, INK, RED, at_xyr, first, read_sexp, svg, tagged
 
 ROOT = Path(__file__).resolve().parents[2]
 PCB = ROOT / "hardware" / "levels" / "Levels.kicad_pcb"
@@ -26,40 +25,71 @@ TINT = "#fbe3e2"
 # ---------------------------------------------------------------- parsing
 
 def parse(path):
-    s = path.read_text()
-    edges = [tuple(map(float, m)) for m in re.findall(
-        r"\(gr_line \(start ([\d.]+) ([\d.]+)\) \(end ([\d.]+) ([\d.]+)\) \(layer Edge\.Cuts\)", s)]
+    root = read_sexp(path.read_text())
+
+    edges = []
+    for e in tagged(root, "gr_line"):
+        layer = first(e, "layer")
+        if layer and layer[1] == "Edge.Cuts":
+            sx, sy = (float(v) for v in first(e, "start")[1:])
+            ex, ey = (float(v) for v in first(e, "end")[1:])
+            edges.append((sx, sy, ex, ey))
     xs = [v for e in edges for v in (e[0], e[2])]
     ys = [v for e in edges for v in (e[1], e[3])]
     outline = (min(xs), min(ys), max(xs), max(ys))
 
     parts = []
-    for block in re.findall(r"\n  \(module .*?\n  \)", s, re.S):
-        at = re.search(r"\n    \(at ([\d.]+) ([\d.]+)(?: ([\d.-]+))?\)", block)
-        mx, my = float(at[1]), float(at[2])
-        a = math.radians(float(at[3] or 0))
+    for fp in tagged(root, "footprint"):
+        ref_prop = next(p for p in tagged(fp, "property") if p[1] == "Reference")
+        ref = ref_prop[2]
+        if not (ref.startswith("RV") or ref.startswith("J")):
+            # Skips non-component footprints on this board, e.g. the
+            # Schenktronics logo artwork (ref "G***"), which isn't a pot or
+            # a jack and has no place in the assembly drawings.
+            continue
 
-        def place(x, y):
+        mx, my, fp_rot = at_xyr(fp)
+        a = math.radians(fp_rot)
+
+        def place(x, y, a=a, mx=mx, my=my):
             # KiCad rotates footprints counter-clockwise on a y-down board.
             return (mx + x * math.cos(a) + y * math.sin(a), my - x * math.sin(a) + y * math.cos(a))
 
-        ref = re.search(r"fp_text reference (\S+) \(at ([\d.-]+) ([\d.-]+)", block)
-        part = dict(ref=ref[1], at=(mx, my), label_at=place(float(ref[2]), float(ref[3])), lines=[], circles=[], pads=[])
-        for m in re.findall(r"\(fp_line \(start ([\d.-]+) ([\d.-]+)\) \(end ([\d.-]+) ([\d.-]+)\) \(layer F\.SilkS\)", block):
-            x1, y1, x2, y2 = map(float, m)
-            part["lines"].append((*place(x1, y1), *place(x2, y2)))
-        for m in re.findall(r"\(fp_circle \(center ([\d.-]+) ([\d.-]+)\) \(end ([\d.-]+) ([\d.-]+)\) \(layer F\.SilkS\)", block):
-            cx, cy, ex, ey = map(float, m)
-            part["circles"].append((*place(cx, cy), math.hypot(ex - cx, ey - cy)))
-        for m in re.finditer(r"\(pad (\S+) (\S+) (\S+) \(at ([\d.-]+) ([\d.-]+)(?: ([\d.-]+))?\) \(size ([\d.]+) ([\d.]+)\)"
-                             r"(?: \(drill (?:oval )?([\d.]+)(?: ([\d.]+))?\))?", block):
-            name, kind, shape = m[1].strip('"'), m[2], m[3]
-            px, py = place(float(m[4]), float(m[5]))
-            w, h = float(m[7]), float(m[8])
-            dw = float(m[9] or 0)
-            dh = float(m[10] or m[9] or 0)
-            if m[6] and float(m[6]) % 180 == 90:
-                # Pad angles in KiCad 5 are absolute.
+        rx, ry, _ = at_xyr(ref_prop)
+        part = dict(ref=ref, at=(mx, my), label_at=place(rx, ry), lines=[], circles=[], pads=[])
+
+        for e in tagged(fp, "fp_line"):
+            layer = first(e, "layer")
+            if layer and layer[1] == "F.SilkS":
+                x1, y1 = (float(v) for v in first(e, "start")[1:])
+                x2, y2 = (float(v) for v in first(e, "end")[1:])
+                part["lines"].append((*place(x1, y1), *place(x2, y2)))
+        for c in tagged(fp, "fp_circle"):
+            layer = first(c, "layer")
+            if layer and layer[1] == "F.SilkS":
+                cx, cy = (float(v) for v in first(c, "center")[1:])
+                ex, ey = (float(v) for v in first(c, "end")[1:])
+                part["circles"].append((*place(cx, cy), math.hypot(ex - cx, ey - cy)))
+        for p in tagged(fp, "pad"):
+            name, kind, shape = p[1], p[2], p[3]
+            px, py, pad_rot = at_xyr(p)
+            px, py = place(px, py)
+            w, h = (float(v) for v in first(p, "size")[1:])
+            drill = first(p, "drill")
+            if drill:
+                if drill[1] == "oval":
+                    dw, dh = float(drill[2]), float(drill[3])
+                else:
+                    dw = dh = float(drill[1])
+            else:
+                dw = dh = 0.0
+            # A pad's own `at` rotation is local to its footprint (added to
+            # the footprint's placement angle), unlike KiCad 5/6 files where
+            # it was stored absolute — confirmed against this file: a jack
+            # footprint at 90° has oval pads locally rotated to 270° so the
+            # combined, on-board angle comes out to 0° (pad drawn "upright",
+            # matching the oval shown in the KiCad 3D view).
+            if (fp_rot + pad_rot) % 180 == 90:
                 w, h, dw, dh = h, w, dh, dw
             part["pads"].append(dict(name=name, npth=kind == "np_thru_hole", shape=shape,
                                      x=px, y=py, w=w, h=h, dw=dw, dh=dh))
@@ -204,7 +234,7 @@ def fig_faceplate(outline, parts):
 
     pcb_y, body_h, bush_h = 60, 9, 4.5
     body_top = pcb_y - body_h
-    panel_y = body_top - 16  # exploded gap
+    panel_y = body_top - 18  # exploded gap
     nut_y = panel_y - 9
 
     body = [arrow_defs()]
@@ -213,17 +243,17 @@ def fig_faceplate(outline, parts):
                            f"stroke='{INK}' stroke-width='0.35'/>" for dx in dxs]
     thread = lambda x, w, top: [f"<line x1='{x - w}' y1='{top + dy}' x2='{x + w}' y2='{top + dy}' "
                                 f"stroke='{GREY}' stroke-width='0.15'/>" for dy in (1.2, 2.4, 3.6)]
+    for y in pot_ys:
+        # The pots have no threaded bushing: just a body and a D shaft.
+        x = u(y)
+        body.append(f"<rect x='{x - 5}' y='{body_top + 1}' width='10' height='{body_h - 1}' rx='0.4' fill='{LIGHT}' stroke='{GREY}' stroke-width='0.3'/>")
+        body.append(f"<rect x='{x - 3}' y='{body_top - 20}' width='6' height='21' fill='{TINT}' stroke='{RED}' stroke-width='0.35'/>")
+        body += legs(x, (-4.75, -2.5, 0, 4.75))
     for y in jack_ys:
         x = u(y)
         body.append(f"<rect x='{x - 4.5}' y='{body_top}' width='9' height='{body_h}' rx='0.4' fill='#fff' stroke='{INK}' stroke-width='0.35'/>")
         body.append(f"<rect x='{x - 3}' y='{body_top - bush_h}' width='6' height='{bush_h}' fill='#fff' stroke='{INK}' stroke-width='0.35'/>")
         body += thread(x, 3, body_top - bush_h) + legs(x, (-3, 3))
-    for y in pot_ys:
-        x = u(y)
-        body.append(f"<rect x='{x - 5}' y='{body_top}' width='10' height='{body_h}' rx='0.4' fill='#fff' stroke='{INK}' stroke-width='0.35'/>")
-        body.append(f"<rect x='{x - 3.5}' y='{body_top - bush_h}' width='7' height='{bush_h}' fill='#fff' stroke='{INK}' stroke-width='0.35'/>")
-        body.append(f"<rect x='{x - 3}' y='{body_top - bush_h - 12}' width='6' height='12' fill='#fff' stroke='{RED}' stroke-width='0.35'/>")
-        body += thread(x, 3.5, body_top - bush_h) + legs(x, (-4.75, -2.5, 0, 4.75))
 
     # Faceplate, cut away at each hole.
     holes = sorted([(y, 6.0) for y in jack_ys] + [(y, 7.0) for y in pot_ys] +
@@ -235,11 +265,10 @@ def fig_faceplate(outline, parts):
     for a, b in zip(edges[::2], edges[1::2]):
         body.append(f"<rect x='{a:.2f}' y='{panel_y}' width='{b - a:.2f}' height='1.6' fill='{INK}'/>")
 
-    # Nuts.
-    for y in jack_ys + pot_ys:
+    # Jack nuts. The pots have none.
+    for y in jack_ys:
         x = u(y)
-        w = 9 if y in pot_ys else 8
-        body.append(f"<rect x='{x - w / 2}' y='{nut_y}' width='{w}' height='2.2' rx='0.3' fill='#fff' stroke='{INK}' stroke-width='0.35'/>")
+        body.append(f"<rect x='{x - 4}' y='{nut_y}' width='8' height='2.2' rx='0.3' fill='#fff' stroke='{INK}' stroke-width='0.35'/>")
         for dx in (-2.5, -0.8, 0.8, 2.5):
             body.append(f"<line x1='{x + dx}' y1='{nut_y}' x2='{x + dx}' y2='{nut_y + 2.2}' stroke='{GREY}' stroke-width='0.15'/>")
 
@@ -248,16 +277,16 @@ def fig_faceplate(outline, parts):
         body.append(arrow(u(y), nut_y + 3, u(y), panel_y - 0.8, width=0.3))
         body.append(arrow(u(y), panel_y + 2.8, u(y), body_top - bush_h - 0.8, width=0.3))
     lx = u(panel_bot) + 3
-    body.append(text(lx, nut_y + 1.1, "Nuts", 2.6, "bold"))
+    body.append(text(lx, nut_y + 1.1, "Jack nuts", 2.6, "bold"))
     body.append(text(lx, nut_y + 4.3, "finger-tight first", 2.2, color=GREY))
     body.append(text(lx, panel_y + 0.8, "Faceplate", 2.6, "bold"))
     body.append(text(lx, panel_y + 4, "“Atten.” end over RV1", 2.2, color=GREY))
     body.append(text(lx, body_top + 3, "Pots and jacks", 2.6, "bold"))
     body.append(text(lx, body_top + 6.2, "not soldered yet", 2.2, color=GREY))
     body.append(text(lx, pcb_y + 0.8, "PCB", 2.6, "bold"))
-    body.append(text(u(pot_ys[1]), pcb_y + 7.5, "Straighten the pot shafts in their holes,", 2.6, "bold",
+    body.append(text(u(pot_ys[1]), pcb_y + 7.5, "Center the pot shafts in their holes,", 2.6, "bold",
                      color=RED, anchor="middle"))
-    body.append(text(u(pot_ys[1]), pcb_y + 10.7, "then tighten the nuts", 2.2, color=GREY, anchor="middle"))
+    body.append(text(u(pot_ys[1]), pcb_y + 10.7, "then tighten the jack nuts", 2.2, color=GREY, anchor="middle"))
     body.append(text(u(y0), pcb_y + 7.5, "RV1 end", 2, color=GREY))
     body.append(text(u(y1), pcb_y + 7.5, "J4 end", 2, color=GREY, anchor="end"))
     body.append(text(u(panel_top), pcb_y + 15, "Side view, not to scale vertically", 2, color=GREY))
