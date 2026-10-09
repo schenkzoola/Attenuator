@@ -343,7 +343,7 @@
       "netlist": "Levels.net",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Levels.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

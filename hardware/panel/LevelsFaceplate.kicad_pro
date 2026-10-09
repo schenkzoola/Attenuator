@@ -281,7 +281,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -303,7 +303,7 @@
       "netlist": "",
       "plot": "Gerbers/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "LevelsFaceplate.step",
       "vrml": ""
     },
     "page_layout_descr_file": "/Users/nathanschenk/Products/NTSFootprints/Schenktronics A4.kicad_wks"
@@ -317,14 +317,14 @@
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
+    "page_layout_descr_file": "/Users/nathanschenk/Products/NTSFootprints/Schenktronics A4.kicad_wks",
     "top_level_sheets": [
       {
         "filename": "LevelsFaceplate.kicad_sch",
         "name": "LevelsFaceplate",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
-    ],
-    "page_layout_descr_file": "/Users/nathanschenk/Products/NTSFootprints/Schenktronics A4.kicad_wks"
+    ]
   },
   "sheets": [],
   "text_variables": {},

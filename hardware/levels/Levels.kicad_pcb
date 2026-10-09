@@ -146,26 +146,6 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.06 -1)
-			(end -0.2 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3059e3a1-fb7e-47a2-9bb8-986b486fa713")
-		)
-		(fp_line
-			(start -1.06 -1)
-			(end -1.06 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "af751c65-59b5-479c-be4c-322c852df3f5")
-		)
-		(fp_line
 			(start 4.5 1.98)
 			(end 0.35 1.98)
 			(stroke
@@ -455,26 +435,27 @@
 			(uuid "debe2afd-9f98-454a-b51b-374209a5febd")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Connector_Audio.3dshapes/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical.wrl"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/Thonkiconn_PJ398SM.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -6.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
-		(model "${CUSTOMLIB}/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+			(hide yes)
 			(offset
-				(xyz 0 -6.8 13.7)
+				(xyz 0 0 13.7)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 90 90 0)
+				(xyz 90 90 -0)
 			)
 		)
 	)
@@ -792,7 +773,8 @@
 			(uuid "c826cf83-bc13-4a01-8a49-fd9b0ed25226")
 		)
 		(embedded_fonts no)
-		(model "${CUSTOMLIB}/_NTSFootprints.pretty/3D/ptv09a-4x30u-xxxx.stp"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/ptv09a-4x30u-xxxx.stp"
+			(hide yes)
 			(offset
 				(xyz 7.5 2.5 6.5)
 			)
@@ -800,7 +782,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 90 0 -90)
+				(xyz 90 -0 -90)
+			)
+		)
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/PTV09A-4020F-B104.stp"
+			(offset
+				(xyz 7.5 2.5 6.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 -0 -90)
 			)
 		)
 	)
@@ -858,26 +851,6 @@
 		(path "/00000000-0000-0000-0000-00005ddce5a9")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.06 -1)
-			(end -0.2 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f457e60e-899f-4a1a-a77e-4bdc326a9227")
-		)
-		(fp_line
-			(start -1.06 -1)
-			(end -1.06 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "98625444-1708-4240-ace4-ae3b31555b43")
-		)
 		(fp_line
 			(start 4.5 1.98)
 			(end 0.35 1.98)
@@ -1168,26 +1141,27 @@
 			(uuid "f2fa5667-f1fc-4ede-868e-9074d9ef30f1")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Connector_Audio.3dshapes/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical.wrl"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/Thonkiconn_PJ398SM.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -6.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
-		(model "${CUSTOMLIB}/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+			(hide yes)
 			(offset
-				(xyz 0 -6.8 13.7)
+				(xyz 0 0 13.7)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 90 90 0)
+				(xyz 90 90 -0)
 			)
 		)
 	)
@@ -1505,7 +1479,8 @@
 			(uuid "fffa8873-3c43-42a7-b6f3-72a27271fde4")
 		)
 		(embedded_fonts no)
-		(model "${CUSTOMLIB}/_NTSFootprints.pretty/3D/ptv09a-4x30u-xxxx.stp"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/ptv09a-4x30u-xxxx.stp"
+			(hide yes)
 			(offset
 				(xyz 7.5 2.5 6.5)
 			)
@@ -1513,7 +1488,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 90 0 -90)
+				(xyz 90 -0 -90)
+			)
+		)
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/PTV09A-4020F-B104.stp"
+			(offset
+				(xyz 7.5 2.5 6.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 -0 -90)
 			)
 		)
 	)
@@ -1571,26 +1557,6 @@
 		(path "/00000000-0000-0000-0000-00005ddce597")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.06 -1)
-			(end -0.2 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "579a1270-6680-49b0-9e5a-181bd5c9f47d")
-		)
-		(fp_line
-			(start -1.06 -1)
-			(end -1.06 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9e3fe0ca-ab79-4bc9-9761-10b8a4bc0143")
-		)
 		(fp_line
 			(start 4.5 1.98)
 			(end 0.35 1.98)
@@ -1881,26 +1847,27 @@
 			(uuid "e1cc34a9-feeb-4a37-93c6-b7eef302e079")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Connector_Audio.3dshapes/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical.wrl"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/Thonkiconn_PJ398SM.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -6.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
-		(model "${CUSTOMLIB}/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+			(hide yes)
 			(offset
-				(xyz 0 -6.8 13.7)
+				(xyz 0 0 13.7)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 90 90 0)
+				(xyz 90 90 -0)
 			)
 		)
 	)
@@ -1958,26 +1925,6 @@
 		(path "/00000000-0000-0000-0000-00005ddb8a80")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.06 -1)
-			(end -0.2 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "db003a88-4fc5-4eb2-a1d4-8dcf53dc123b")
-		)
-		(fp_line
-			(start -1.06 -1)
-			(end -1.06 -0.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "44c171a2-87b4-47ab-b5d6-e121a9b23d30")
-		)
 		(fp_line
 			(start 4.5 1.98)
 			(end 0.35 1.98)
@@ -2268,26 +2215,27 @@
 			(uuid "e7480e7a-8a79-454c-a7f2-2962439557d1")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Connector_Audio.3dshapes/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical.wrl"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/Thonkiconn_PJ398SM.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -6.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
-		(model "${CUSTOMLIB}/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+		(model "/Users/nathanschenk/Products/NTSFootprints/_NTSFootprints.pretty/3D/CUI_MJ-3507.step"
+			(hide yes)
 			(offset
-				(xyz 0 -6.8 13.7)
+				(xyz 0 0 13.7)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 90 90 0)
+				(xyz 90 90 -0)
 			)
 		)
 	)
